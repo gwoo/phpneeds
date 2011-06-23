@@ -22,6 +22,9 @@
 			<h2>
 				Powered by <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>.
 			</h2>
+			<?php if (!empty($this->request()->user)):
+				printf("<div id='user'>hi, %s<p>please vote</p></div>", $this->request()->user);
+			endif; ?>
 		</div>
 		<div id="content">
 			<div id="ideas">

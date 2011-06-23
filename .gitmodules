@@ -1,3 +1,6 @@
 [submodule "libraries/lithium"]
 	path = libraries/lithium
 	url = git://github.com/UnionOfRAD/lithium.git
+[submodule "libraries/li3_oauth"]
+	path = libraries/li3_oauth
+	url = git://github.com/gwoo/li3_oauth.git

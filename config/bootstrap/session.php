@@ -17,6 +17,16 @@ Session::config(array(
 	'default' => array('adapter' => 'Php')
 ));
 
+use lithium\action\Dispatcher;
+
+Dispatcher::applyFilter('run', function($self, $params, $chain) {
+	$params['request']->user = null;
+
+	if ($access = Session::read('oauth.access')) {
+		$params['request']->user = $access['screen_name'];
+	}
+	return $chain->next($self, $params, $chain);
+});
 /**
  * Uncomment the lines below to enable forms-based authentication. This configuration will attempt
  * to authenticate users against a `Users` model. In a controller, run
