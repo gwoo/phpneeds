@@ -7,6 +7,8 @@ li span a { font-size: 16px; font-weight: bold; padding: 0px 4px; color: #00A8E6
 
 .button { padding: 2px 4px 0px 4px; font-size: 16px; font-weight: bold; padding: 0px 4px;}
 
+#header h1 a {color: #111;}
+#header h1 a:hover {color: #00A8E6;}
 #header h2 { font-size: 13px; float: left; width: 360px;}
 #user {float: left; margin: 10px; font-size: 13px; font-weight: normal; color: #555;}
 #user p {font-size: 10px; margin: 0; padding: 0; line-height: 10px; color: #999;}

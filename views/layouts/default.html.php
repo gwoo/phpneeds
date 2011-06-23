@@ -18,7 +18,7 @@
 <body class="app">
 	<div id="container">
 		<div id="header">
-			<h1>PHP Needs</h1>
+			<h1><?=$this->html->link('PHP Needs', array('Ideas::index'));?></h1>
 			<h2>
 				Powered by <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>.
 			</h2>
