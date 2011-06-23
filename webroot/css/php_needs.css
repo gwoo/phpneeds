@@ -21,8 +21,7 @@ a img {border: 0;}
 #latest-ideas { float: left; width: 300px;}
 #popular-ideas {float: left;width: 300px;margin-left: 20px;}
 #tweets {float: left;width: 300px;margin-left: 20px; font-size: 13px;}
-#footer {clear: both; margin-top: 20px; font-size: 11px; 
-	float: right; width: 300px; background: #f4f4f4; padding: 10px; line-height: 13px;}
+#footer {clear: both; margin-top: 20px; font-size: 11px; float: right; width: 300px; background: #f4f4f4; padding: 10px; line-height: 13px;}
 #footer img {margin-right: 10px;}
 
 
