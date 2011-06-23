@@ -5,7 +5,7 @@
  * @copyright     Copyright 2010, Union of RAD (http://union-of-rad.org)
  * @license       http://opensource.org/licenses/bsd-license.php The BSD License
  */
-
+date_default_timezone_set('UTC');
 /**
  * This file creates a default cache configuration using the most optimized adapter available, and
  * uses it to provide default caching for high-overhead operations.
