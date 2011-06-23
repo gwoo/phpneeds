@@ -18,12 +18,11 @@ a img {border: 0;}
 #content { width: 960px;}
 #content h2 {margin: 0;}
 #content { clear: both; float: left; width: 960px;}
-#footer {clear: both; margin-top: 20px; font-size: 11px; float: right; width: 260px; background: #f4f4f4; padding: 10px; line-height: 13px;}
+#latest-ideas { float: left; width: 300px;}
+#popular-ideas {float: left;width: 300px;margin-left: 20px;}
+#tweets {float: left;width: 300px;margin-left: 20px; font-size: 13px;}
+#footer {clear: both; margin-top: 20px; font-size: 11px; 
+	float: right; width: 300px; background: #f4f4f4; padding: 10px; line-height: 13px;}
 #footer img {margin-right: 10px;}
 
-#latest-ideas { float: left; width: 300px;}
-
-#popular-ideas {float: left;width: 300px;margin-left: 20px;}
-
-#tweets {float: left;width: 300px;margin-left: 20px; font-size: 13px;}
 

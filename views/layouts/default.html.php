@@ -11,7 +11,7 @@
 <head>
 	<?php echo $this->html->charset();?>
 	<title>PHP needs > <?php echo $this->title(); ?></title>
-	<?php echo $this->html->style(array('debug', 'lithium', 'php_needs.css?1')); ?>
+	<?php echo $this->html->style(array('debug', 'lithium', 'php_needs.css?2')); ?>
 	<?php echo $this->scripts(); ?>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
 </head>
@@ -29,16 +29,17 @@
 		</div>
 		<div id="content">
 			<?php echo $this->content(); ?>
-		</div>
-		<div id="footer">
-			<a href="http://orchestra.io">
-				<?=$this->html->image('runs-on-orchestra.png', array(
-					'border' => 0, 'alt' => 'http://orchestra.io', 'align' => 'left'
-				));?>
-			</a>
-			<a href="http://github.com/gwoo/phpneeds">
-				get the source <br /> on github
-			</a>
+			
+			<div id="footer">
+				<a href="http://orchestra.io">
+					<?=$this->html->image('runs-on-orchestra.png', array(
+						'border' => 0, 'alt' => 'http://orchestra.io', 'align' => 'left'
+					));?>
+				</a>
+				<a href="http://github.com/gwoo/phpneeds">
+					get the source <br /> on github
+				</a>
+			</div>
 		</div>
 	</div>
 </body>

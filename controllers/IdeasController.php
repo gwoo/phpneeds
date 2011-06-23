@@ -12,7 +12,7 @@ class IdeasController extends \lithium\action\Controller {
 	public function index() {
 		$latest = Ideas::all(array('order' => array('date' => 'desc')));
 		$popular = Ideas::all(array('order' => array('score' => 'desc')));
-		$tweets = Tweets::search(array('q' => '#phpneeds'));
+		$tweets = Tweets::search(array('q' => '#phpneeds', 'rpp' => 100));
 		return compact('latest', 'popular', 'tweets');
 	}
 
