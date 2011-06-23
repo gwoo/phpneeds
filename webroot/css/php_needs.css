@@ -1,5 +1,6 @@
 h2 em { font-size: 12px; font-style: normal;}
 li span a { font-size: 16px; font-weight: bold; padding: 0px 4px; color: #00A8E6;}
+a img {border: 0;}
 
 .list ul { margin: 0;}
 .list li { list-style-type: none; margin: 10px 0px;}
@@ -7,15 +8,18 @@ li span a { font-size: 16px; font-weight: bold; padding: 0px 4px; color: #00A8E6
 
 .button { padding: 2px 4px 0px 4px; font-size: 16px; font-weight: bold; padding: 0px 4px;}
 
+#header {margin-bottom: 40px;}
 #header h1 a {color: #111;}
 #header h1 a:hover {color: #00A8E6;}
-#header h2 { font-size: 13px; float: left; width: 360px;}
-#user {float: left; margin: 10px; font-size: 13px; font-weight: normal; color: #555;}
-#user p {font-size: 10px; margin: 0; padding: 0; line-height: 10px; color: #999;}
-#content { width: 960px;}
-#content h2 {margin-top: 0;}
+#header h2 {float: left; width: 320px; font-size: 13px; margin: 4px 0 0 0; padding: 0; line-height: 13px;}
+#user {margin: 4px 0 0 0; font-size: 13px; font-weight: normal; color: #555;}
+#user span {font-size: 10px; padding: 0; line-height: 10px; color: #999;}
 
+#content { width: 960px;}
+#content h2 {margin: 0;}
 #content { clear: both; float: left; width: 960px;}
+#footer {clear: both; margin-top: 20px; font-size: 11px; float: right; width: 260px; background: #f4f4f4; padding: 10px; line-height: 13px;}
+#footer img {margin-right: 10px;}
 
 #latest-ideas { float: left; width: 300px;}
 

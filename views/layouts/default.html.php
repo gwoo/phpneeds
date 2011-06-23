@@ -20,14 +20,25 @@
 		<div id="header">
 			<h1><?=$this->html->link('PHP Needs', array('Ideas::index'));?></h1>
 			<h2>
-				Powered by <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>.
+				Powered by <?=$this->html->link('Lithium', 'http://lithify.me/'); ?> 
+				and <?=$this->html->link('Orchestra.io', 'http://orchestra.io/'); ?>.
 			</h2>
 			<?php if (!empty($this->request()->user)):
-				printf("<div id='user'>hi, %s<p>please vote</p></div>", $this->request()->user);
+				printf("<div id='user'>hi, %s. <span>please vote</span></div>", $this->request()->user);
 			endif; ?>
 		</div>
 		<div id="content">
 			<?php echo $this->content(); ?>
+		</div>
+		<div id="footer">
+			<a href="http://orchestra.io">
+				<?=$this->html->image('runs-on-orchestra.png', array(
+					'border' => 0, 'alt' => 'http://orchestra.io', 'align' => 'left'
+				));?>
+			</a>
+			<a href="http://github.com/gwoo/phpneeds">
+				get the source <br /> on github
+			</a>
 		</div>
 	</div>
 </body>
