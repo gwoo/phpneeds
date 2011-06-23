@@ -36,13 +36,10 @@ class IdeasController extends \lithium\action\Controller {
 		}
 		$idea = Ideas::find($this->request->id);
 
-		if (isset($idea->voters[$this->request->user])) {
+		if ($idea->hasVoted($this->request->user)) {
 			return $this->redirect('Ideas::index');
 		}
-		$idea->score = $idea->score + 1;
-		$idea->voters = array_merge((array) $idea->voters, array($this->request->user => true));
-
-		if ($idea && $idea->save()) {
+		if ($idea && $idea->vote($this->request->user)) {
 			//success maaybe flash a message
 		}
 		return $this->redirect('Ideas::index');
