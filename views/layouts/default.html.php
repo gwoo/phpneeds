@@ -11,7 +11,7 @@
 <head>
 	<?php echo $this->html->charset();?>
 	<title>PHP needs > <?php echo $this->title(); ?></title>
-	<?php echo $this->html->style(array('debug', 'lithium', 'php_needs')); ?>
+	<?php echo $this->html->style(array('debug', 'lithium', 'php_needs.css?1')); ?>
 	<?php echo $this->scripts(); ?>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
 </head>
