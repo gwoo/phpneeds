@@ -7,42 +7,26 @@ use app\models\Ideas;
 class IdeasController extends \lithium\action\Controller {
 
 	public function index() {
-		$ideas = Ideas::all();
-		return compact('ideas');
+		$latest = Ideas::all();
+		$popular = Ideas::all();
+		return compact('latest', 'popular');
 	}
-
-	public function view() {
-		$idea = Ideas::first($this->request->id);
-		return compact('idea');
-	}
-
+	
 	public function add() {
 		$idea = Ideas::create();
-
+		
 		if (($this->request->data) && $idea->save($this->request->data)) {
-			$this->redirect(array('Ideas::view', 'args' => array($idea->id)));
+			$this->redirect(array('Ideas::index'));
 		}
 		return compact('idea');
 	}
 
-	public function edit() {
+	public function vote() {
 		$idea = Ideas::find($this->request->id);
 
-		if (!$idea) {
-			$this->redirect('Ideas::index');
+		if ($idea && $idea->save(array('score' => $idea->score + 1))) {
+			//success maaybe flash a message
 		}
-		if (($this->request->data) && $idea->save($this->request->data)) {
-			$this->redirect(array('Ideas::view', 'args' => array($idea->id)));
-		}
-		return compact('idea');
-	}
-
-	public function delete() {
-		if (!$this->request->is('post') && !$this->request->is('delete')) {
-			$msg = "Ideas::delete can only be called with http:post or http:delete.";
-			throw new DispatchException($msg);
-		}
-		Ideas::find($this->request->id)->delete();
 		$this->redirect('Ideas::index');
 	}
 }

@@ -1,0 +1,22 @@
+h2 em { font-size: 12px;}
+li span a { font-size: 16px; font-weight: bold; padding: 0px 4px; color: #00A8E6;}
+
+.list ul { margin: 0;}
+.list li { list-style-type: none; margin: 10px 0px;}
+.list a {color: #00A8E6;}
+
+.button { padding: 2px 4px 0px 4px; font-size: 16px; font-weight: bold; padding: 0px 4px;}
+
+
+
+#header h2 { font-size: 13px;}
+#content { width: 960px;}
+#content h2 {margin-top: 0;}
+
+#ideas { float: left; width: 744px;}
+#tweets { float: left; width: 100px;}
+
+#latest-ideas { float: left; width: 360px;}
+
+#popular-ideas {float: left;width: 360px;margin-left: 20px;}
+
