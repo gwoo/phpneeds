@@ -20,7 +20,7 @@
 		<div id="header">
 			<h1><?=$this->html->link('PHP Needs', array('Ideas::index'));?></h1>
 			<h2>
-				Powered by <?=$this->html->link('Lithium', 'http://lithify.me/'); ?> 
+				Powered by <?=$this->html->link('Lithium', 'http://lithify.me/'); ?>
 				and <?=$this->html->link('Orchestra.io', 'http://orchestra.io/'); ?>.
 			</h2>
 			<?php if (!empty($this->request()->user)):
