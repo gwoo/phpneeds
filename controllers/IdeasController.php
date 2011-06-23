@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Ideas;
+use app\models\Tweets;
 
 class IdeasController extends \lithium\action\Controller {
 
@@ -11,7 +12,8 @@ class IdeasController extends \lithium\action\Controller {
 	public function index() {
 		$latest = Ideas::all(array('order' => array('date' => 'desc')));
 		$popular = Ideas::all(array('order' => array('score' => 'desc')));
-		return compact('latest', 'popular');
+		$tweets = Tweets::search(array('q' => '#phpneeds'));
+		return compact('latest', 'popular', 'tweets');
 	}
 
 	public function add() {

@@ -27,12 +27,7 @@
 			endif; ?>
 		</div>
 		<div id="content">
-			<div id="ideas">
-				<?php echo $this->content(); ?>
-			</div>
-			<div id="tweets">
-				
-			</div>
+			<?php echo $this->content(); ?>
 		</div>
 	</div>
 </body>

@@ -13,10 +13,11 @@ li span a { font-size: 16px; font-weight: bold; padding: 0px 4px; color: #00A8E6
 #content { width: 960px;}
 #content h2 {margin-top: 0;}
 
-#ideas { float: left; width: 744px;}
-#tweets { float: left; width: 100px;}
+#content { clear: both; float: left; width: 960px;}
 
-#latest-ideas { float: left; width: 360px;}
+#latest-ideas { float: left; width: 300px;}
 
-#popular-ideas {float: left;width: 360px;margin-left: 20px;}
+#popular-ideas {float: left;width: 300px;margin-left: 20px;}
+
+#tweets {float: left;width: 300px;margin-left: 20px; font-size: 13px;}
 
